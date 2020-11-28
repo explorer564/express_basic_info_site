@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    table(width='100%' border='0')
+      tbody
+        tr
+          td(colspan='2' bgcolor='#e6d132')
+            h1 #{title}
+        tr(valign='top')
+          td(bgcolor='#f7eda1' width='30')
+            b Menu
+            br
+            li
+              a(href='./') Index
+            li
+              a(href='./about') About
+            li
+              a(href='./contact') Contact me
+          td(bgcolor='#eee' width='100' height='200')
+             block content
+        tr
+          td(colspan='2' bgcolor='#e6d132')
+            center
+              | Thank you for coming!
